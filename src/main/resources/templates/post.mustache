@@ -1,0 +1,18 @@
+{{> header}}
+
+
+<div class="post-container">
+    <H2>{{post.title}}</H2>
+    {{post.content}}
+</div>
+
+<div class="comments-container">
+    {{#comments}}
+        <div class="comment-container">
+            {{content}}
+        </div>
+    {{/comments}}
+</div>
+
+
+{{>footer}}

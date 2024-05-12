@@ -1,0 +1,30 @@
+{{> header}}
+
+<h1>Esta es la home </h1>
+
+<div class="">
+    <section>
+        {{#posts}}
+            <div class="post-container">
+                <header class="post-header">
+                    <a href="/post/{{id}}">
+                    <div class="post-meta">Por <strong>{{author.username}}</strong>, el <strong>{{createdAt}}</strong></div>
+                    </a>
+                </header>
+                <div class="post-title">
+                    {{title}}
+                </div>
+                <div class="post-headline">
+                    {{headline}}
+                </div>
+                <div class="post-controls">
+                    <button>upvote</button>
+                    <button>downvote</button>
+                </div>
+            </div>
+        {{/posts}}
+    </section>
+
+</div>
+
+{{> footer}}
